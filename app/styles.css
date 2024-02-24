@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Fredoka", sans-serif;
+
+}
+.header{
+    background-color: rgb(134, 178, 185);
+}
+.logo {
+    float:left; 
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+li {
+    float: none;
+
+}
+li a {
+    display: block;
+    padding: 29px 40px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+li a:hover:not(.active){
+    background-color: rgb(95, 95, 177);
+    transition: 0.5s;
+
+}
+li a.active {
+    background-color: rgb(95, 95, 177);
+
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.team {
+    margin: 0px;
+    padding: 0px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.team img {
+    width: 125px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+@media only screen and (max-width: 480px){
+    .team {
+        gap: 10px;
+    }
+    .team img {
+        width: 50px;
+    }
+    figure{
+        width: 75px;
+    }
+
+    li a{
+        font-size: 14px;
+        padding: 14px 12px;
+    }
+
+    .logo{
+        height: 60px;
+    }
+}
+figure {
+    text-align: center;
+    margin: 0px;
+    width: 125px;
+
+}
+
+figcaption{
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 30px;
+    font-size: 13px;
+    color: #555;
+}
+hr {
+    width: 100%;
+    color: #888;
+}
+
+span{ 
+    font-weight: normal;
+    color: #272727;
+}
+
+.coming-soon {
+    margin-top: 100px;
+}
