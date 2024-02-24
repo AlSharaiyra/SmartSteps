@@ -8,7 +8,7 @@ body {
 
 }
 .header{
-    background-color: rgb(134, 178, 185);
+    background-color: rgb(138, 201, 211);
 }
 .logo {
     float:left; 
@@ -38,12 +38,12 @@ li a {
 
 }
 li a:hover:not(.active){
-    background-color: rgb(95, 95, 177);
+    background-color: rgb(152, 152, 212);
     transition: 0.5s;
 
 }
 li a.active {
-    background-color: rgb(95, 95, 177);
+    background-color: rgb(152, 152, 212);
 
 }
 
@@ -67,6 +67,7 @@ h2 {
 
 .team img {
     width: 125px;
+    height: 125px;
     border: 2px solid;
     border-radius: 50%;
     margin: 0px;
