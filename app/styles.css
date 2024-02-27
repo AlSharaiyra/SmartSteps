@@ -39,7 +39,7 @@ li a {
 }
 li a:hover:not(.active){
     background-color: rgb(152, 152, 212);
-    transition: 0.5s;
+    transition: all 200ms ease;
 
 }
 li a.active {
@@ -75,27 +75,7 @@ h2 {
 
 }
 
-@media only screen and (max-width: 480px){
-    .team {
-        gap: 10px;
-    }
-    .team img {
-        width: 50px;
-        height: 50px;
-    }
-    figure{
-        width: 75px;
-    }
 
-    li a{
-        font-size: 12px;
-        padding: 15px 12px;
-    }
-
-    .logo{
-        height: 60px;
-    }
-}
 figure {
     text-align: center;
     margin: 0px;
@@ -126,4 +106,130 @@ span{
 
 .coming-soon {
     margin-top: 100px;
+}
+
+
+.signup-form {
+    border: 3px solid rgb(152, 152, 212);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* margin: 80px 470px; */
+    margin: 5% 34%;
+    padding: 10px 20px;
+}
+.signup-form input:not(.gender, .signup-btn){
+    border: 2px solid rgb(138, 201, 211);
+    font-size: 16px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.mid {
+    margin-top: 20px;
+    width: 45%; 
+}
+
+/* .mobile {
+    width: 58%;
+
+} */
+
+.age {
+    width: 76%;
+    /* padding-bottom: 1px; */
+}
+
+.full{
+    width: 95%;
+}
+
+.radio-gender {
+    padding: 0px;
+    margin: 0px;
+}
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    z-index: 10;
+    margin: 0px 10px 10px 0;
+    position: relative;
+    color: #ced4da;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    /* font-weight: bold; */
+    background-color: #ffffff;
+    border: 2px solid rgb(138, 201, 211);
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: #495057;
+    background-color: #ced4da;
+    /* background-color: rgb(152, 152, 212); */
+  }
+  
+  input[type="radio"] + label {
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+
+.signup-btn {
+    border: 2px solid rgb(138, 201, 211);
+    background-color: rgb(138, 201, 211);
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 10px;
+    /* margin-top: 10px; */
+    width: 99.5%;
+
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+    transition: all 200ms ease;
+    background-color: rgb(152, 152, 212);
+    border-color: rgb(152, 152, 212);
+}
+  
+
+@media only screen and (max-width: 480px){
+    .team {
+        gap: 10px;
+    }
+    .team img {
+        width: 50px;
+        height: 50px;
+    }
+    figure{
+        width: 75px;
+    }
+
+    li a{
+        font-size: 12px;
+        padding: 14px 8px;
+    }
+
+    .logo{
+        height: 58px;
+    }
+    .signup-form{
+        margin: 10% 5%;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+    }
+
+    .signup-form input:not(.gender, .signup-btn){
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    .age {
+        width: 71.5%;
+        /* padding-bottom: 1px; */
+    }
 }
