@@ -387,10 +387,10 @@ input[type="radio"] + label {
     }
     
     .label {
-        width: 280px;
+        width: 270px;
     }
     .main ul {
-        max-width: 330px;
+        max-width: 340px;
         width: 100%;
     }
 }
